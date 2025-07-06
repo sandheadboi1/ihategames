@@ -4,6 +4,16 @@
     top: 30px;
     animation: up-down 3s ease-in-out infinite;
   }
+
+  .butt
+  {
+    color: rgb(0, 0, 0);
+    width: 500px;
+    height: 100%;
+    background-color: rgb(255, 196, 1);
+    border-radius: 5px;
+    border-color: black;
+  }
   
   .new {
     position: absolute;
@@ -91,7 +101,7 @@
 
   .man
   {
-    border-radius: 10%;
+    border-radius: 5%;
   }
   
 
