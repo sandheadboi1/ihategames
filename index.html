@@ -7,6 +7,29 @@
      crossorigin="anonymous"></script>
 </head>
 
+<!-- Audio element without controls -->
+<audio id="bgAudio" src="bg.mp3" autoplay muted loop></audio>
+
+<script>
+  const audio = document.getElementById('bgAudio');
+
+  // Try to play immediately (muted)
+  audio.play().catch(() => {
+    console.log('Autoplay failed.');
+  });
+
+  // Unmute on first mouse movement or touch (mobile)
+  function unmute() {
+    audio.muted = false;
+    audio.play(); // ensures playback continues
+    document.removeEventListener('mousemove', unmute);
+    document.removeEventListener('touchstart', unmute);
+  }
+
+  document.addEventListener('mousemove', unmute);
+  document.addEventListener('touchstart', unmute);
+</script>
+
 
 <div id="fart" ><div style="width: 100% - 10px;"><a style="color: black;">i hate games!<img src="images/bluedude.png" width="250" class="moveable-image"></a></div></a></div>
 <br>
@@ -86,6 +109,7 @@
 
   gtag('config', 'G-F9FRLDYCQQ');
 </script>
+
 
 
 
