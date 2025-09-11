@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Obby Robby</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: black;
+    }
+    img {
+      width: 100px;
+      opacity: 0; /* hidden at start */
+      animation: grow .2s ease-in-out forwards;
+      animation-delay: 3s; /* wait 3 seconds */
+    }
+    @keyframes grow {
+      from {
+        opacity: 1;
+        transform: scale(0.1);
+      }
+      to {
+        opacity: 1;
+        transform: scale(10);
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthvnext.bing.com%2Fth%2Fid%2FOIP.MEDcSs-rxD9B4R6qBXcvPAHaHa%3Fcb%3Ducfimg2%26pid%3DApi%26ucfimg%3D1&f=1&ipt=4090a7cbadba9d01d91e44f70313f8b722d8ae341fcedda86af0c815a31a2558&ipo=images">
+</body>
+</html>
