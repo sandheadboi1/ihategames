@@ -7,29 +7,6 @@
      crossorigin="anonymous"></script>
 </head>
 
-<!-- Audio element without controls -->
-<audio id="bgAudio" src="bg.mp3" autoplay muted loop></audio>
-
-<script>
-  const audio = document.getElementById('bgAudio');
-
-  // Try to play immediately (muted)
-  audio.play().catch(() => {
-    console.log('Autoplay failed.');
-  });
-
-  // Unmute on first mouse movement or touch (mobile)
-  function unmute() {
-    audio.muted = false;
-    audio.play(); // ensures playback continues
-    document.removeEventListener('mousemove', unmute);
-    document.removeEventListener('touchstart', unmute);
-  }
-
-  document.addEventListener('mousemove', unmute);
-  document.addEventListener('touchstart', unmute);
-</script>
-
 
 <div id="fart" ><div style="width: 100% - 10px;"><a style="color: black;">i hate games!<img src="images/bluedude.png" width="250" class="moveable-image"></a></div></a></div>
 <br>
@@ -40,7 +17,7 @@
 
 <div id="grid">
   <div><a style="color: black;" href="slope/index.html"                          >slope<br><img src="images/slopee.png"  width="200" height="200"/></a></div>
-  <div><a style="color: black;" href="soreball/coreballa-main/index.html"        >coreball<br><img src="images/ball.png"  width="300" height="200"/> </a></div>
+  <div><a style="color: black;" href="coreball/coreballa-main/index.html"        >coreball<br><img src="images/ball.png"  width="300" height="200"/> </a></div>
   <div><a style="color: black;" href="retrobowl/index.html"                      >retro bowl<br><img src="images/ret.jpg"  width="300" height="200"/></a></div>
   <div><a style="color: black;" href="bird/floppybird-gh-pages/index.html"       >flappy bird<br><img src="images/flappy.png"  width="300" height="200"/></a></div>
   <div><a style="color: black;" href="block blast/index.html"                    >block blast<br><img src="images/fart.jpg"  width="200" height="200"/></a></div>
@@ -74,8 +51,6 @@
   <div><a style="color: black;" href="multitrack/"							>polytrack multiplayer<br><img src="images/poly.jpg" width="200" height="200"></a></div>
   <div><a style="color: black;" href="polytracknew/"							>polytrack updated<br><img src="images/poly.jpg" width="200" height="200"></a></div>
   <div><a style="color: black;" href="2048/"							>2048<br><img src="images/2048.jpg" width="200" height="200"></a></div>
-  <div><a style="color: black;" href="obbyrobby/"							>obby robby<br><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.vB0i2rv9fMxSGgqJnjpsHAAAAA%3Fpid%3DApi&f=1&ipt=63de86269181148eba793e2a10e6aab8e7113b0b97cb51e2249fa3d80da5056f&ipo=images" width="200" height="200"></a></div>
-
 </div>
 
 <br>
@@ -110,6 +85,7 @@
 
   gtag('config', 'G-F9FRLDYCQQ');
 </script>
+
 
 
 
