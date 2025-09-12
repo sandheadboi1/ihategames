@@ -105,4 +105,9 @@
   }
   
 
-  
+.bottombar
+{
+  background-color: rgb(255, 196, 1);
+  border-radius: 5px;
+  position: sticky;
+}
