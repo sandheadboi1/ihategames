@@ -1,5 +1,5 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    X-Frame-Options = "DENY"
+    Content-Security-Policy = "frame-ancestors 'self' https://ihategames.netlify.app"
     X-XSS-Protection = "1; mode=block"
