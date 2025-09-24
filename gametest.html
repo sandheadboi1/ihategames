@@ -1,0 +1,24 @@
+<!doctype html>
+<title>Fun Science Facts</title>
+<link rel="icon" type="image/x-icon" href="images/yellow.ico">
+<head>
+<link rel="stylesheet" href="game.css">
+</head>
+
+<div id="fart" ><div style="width: 100% - 10px;"><a style="color: black;">i hate games!</a></div></a></div>
+<br>
+<select id="pageSelector" onchange="changePage(this.value)">
+  <option value="https://ihategames.netlify.app/slope">slope</option>
+  <option value="https://ihategames.netlify.app/run">run</option>
+</select>
+<br>
+<br>
+<iframe id="gameFrame" src="https://ihategames.netlify.app" frameborder="0" width="100%" 
+  height="600" 
+  style="border: 3px solid rgb(255, 196, 1); border-radius: 10px;">></iframe>
+
+<script>
+  function changePage(url) {
+    document.getElementById("gameFrame").src = url;
+  }
+</script>
