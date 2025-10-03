@@ -2,6 +2,17 @@
 <title>Fun Science Facts</title>
 <link rel="icon" type="image/x-icon" href="images/yellow.ico">
 <head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-00KXXS3RBH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-00KXXS3RBH');
+</script>
+
 <link rel="stylesheet" href="game.css">
 </head>
 
@@ -13,12 +24,63 @@
 </select>
 <br>
 <br>
-<iframe id="gameFrame" src="https://ihategames.netlify.app" frameborder="0" width="100%" 
-  height="600" 
-  style="border: 3px solid rgb(255, 196, 1); border-radius: 10px;">></iframe>
+
+<!-- Dropdown selector -->
+<select id="pageSelector" onchange="changePage(this.value)">
+  <option value="">-- Select a game --</option>
+  <option value="slope/index.html">Slope</option>
+  <option value="coreball/coreballa-main/index.html">Coreball</option>
+  <option value="retrobowl/index.html">Retro Bowl</option>
+  <option value="bird/floppybird-gh-pages/index.html">Flappy Bird</option>
+  <option value="block blast/index.html">Block Blast</option>
+  <option value="red cubes/index.html">Red Cubes</option>
+  <option value="https://word72.netlify.app">Word72</option>
+  <option value="solitare/solitaire.html">Solitaire</option>
+  <option value="drive mad/index.html">Drive Mad</option>
+  <option value="idle breakout/idle-breakout-main/game.html">Idle Breakout</option>
+  <option value="tetris/index.html">Tetris</option>
+  <option value="bitlife-main/index.html">BitLife</option>
+  <option value="monkey/index.html">Monkey Mart</option>
+  <option value="ragdoll/">Ragdoll Hit</option>
+  <option value="unicycle/index.html">Unicycle Hero</option>
+  <option value="ovo/index.html">OvO</option>
+  <option value="basket/index.html">Basket Random</option>
+  <option value="archer/index.html">Ragdoll Archers</option>
+  <option value="pewpew/index.html">Gun Spin</option>
+  <option value="bad piggies/index.html">Bad Piggies</option>
+  <option value="house/House-of-Hazards-main/index.html">House of Hazards</option>
+  <option value="moto/index.html">MotoX3M</option>
+  <option value="black/index.html">Blackjack</option>
+  <option value="btd4/index.html">Bloons TD4</option>
+  <option value="fnaf/index.html">FNAF</option>
+  <option value="m64/index.html">Mario 64</option>
+  <option value="mk64/index.html">Mario Kart 64 (Broken)</option>
+  <option value="mine/index.html">Minecraft</option>
+  <option value="sadwheels/index.html">Happy Wheels</option>
+  <option value="subway/index.html">Subway Surfers</option>
+  <option value="driftboss/index.html">Drift Boss</option>
+  <option value="ducky/">Duck Life</option>
+  <option value="multitrack/">Polytrack Multiplayer</option>
+  <option value="polytracknew/">Polytrack Updated</option>
+  <option value="2048/">2048</option>
+  <option value="adofai/">A Dance of Fire and Ice</option>
+  <option value="boxingrandom/">Boxing Random</option>
+  <option value="dante/">Dante</option>
+</select>
+
+<!-- Iframe -->
+<iframe id="gameFrame" 
+        src="https://ihategames.netlify.app" 
+        frameborder="0" 
+        width="100%" 
+        height="600" 
+        style="border:3px solid black; border-radius:8px;">
+</iframe>
 
 <script>
   function changePage(url) {
-    document.getElementById("gameFrame").src = url;
+    if (url) {
+      document.getElementById("gameFrame").src = url;
+    }
   }
 </script>
